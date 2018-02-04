@@ -15,13 +15,11 @@ for z in range((n/2)):
         while x<n:
             if x % z == 0:
                 numbers[1][x] = False
-                x = x + 1
-            else:
-                x = x +1
+            x = x + 1    
         z = z+1
 
 for t in range((n-1)):
     if numbers[1][t] == True:
         prims.append(numbers[0][t])
 print("Primzahlen:")
-print(prims)        
+print(prims)
